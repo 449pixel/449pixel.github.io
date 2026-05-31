@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ─── PRIMARY SEO ─── -->
+  <title>VeltroTech LLC | IT Staffing, Tech Consulting & Data Analytics — Nationwide</title>
+  <meta name="description" content="VeltroTech LLC is a nationwide IT staffing, technology consulting, and data analytics firm. We connect top-tier tech talent with forward-thinking companies across the US. Contract, permanent, and C2H placements." />
+  <meta name="keywords" content="IT staffing, tech recruiting, IT consulting, data analytics staffing, remote IT jobs, contract IT jobs, software developer jobs, cloud architect jobs, cybersecurity staffing, nationwide IT recruiter, VeltroTech" />
+  <meta name="author" content="VeltroTech LLC" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.veltrotechllc.com/" />
+
+  <!-- ─── OPEN GRAPH (Facebook, LinkedIn) ─── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.veltrotechllc.com/" />
+  <meta property="og:title" content="VeltroTech LLC | IT Staffing, Consulting & Analytics" />
+  <meta property="og:description" content="Connecting top-tier IT talent with leading companies nationwide. Contract, permanent, and C2H placements across engineering, cloud, data, and cybersecurity." />
+  <meta property="og:image" content="https://www.veltrotechllc.com/og-image.png" />
+  <meta property="og:site_name" content="VeltroTech LLC" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ─── TWITTER / X CARD ─── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.veltrotechllc.com/" />
+  <meta name="twitter:title" content="VeltroTech LLC | IT Staffing, Consulting & Analytics" />
+  <meta name="twitter:description" content="Connecting top-tier IT talent with leading companies nationwide. Contract, permanent, and C2H placements." />
+  <meta name="twitter:image" content="https://www.veltrotechllc.com/og-image.png" />
+
+  <!-- ─── SCHEMA.ORG STRUCTURED DATA ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.veltrotechllc.com/#organization",
+        "name": "VeltroTech LLC",
+        "url": "https://www.veltrotechllc.com",
+        "logo": "https://www.veltrotechllc.com/logo.png",
+        "description": "Nationwide IT staffing, technology consulting, and data analytics firm.",
+        "email": "HR@veltrotechllc.com",
+        "areaServed": "US",
+        "knowsAbout": ["IT Staffing", "Tech Consulting", "Data Analytics", "Cloud Computing", "Cybersecurity"],
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.veltrotechllc.com/#website",
+        "url": "https://www.veltrotechllc.com",
+        "name": "VeltroTech LLC",
+        "publisher": { "@id": "https://www.veltrotechllc.com/#organization" }
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "VeltroTech LLC",
+        "url": "https://www.veltrotechllc.com",
+        "description": "IT staffing, technology consulting, and data analytics services nationwide.",
+        "serviceType": ["IT Staffing", "Technology Consulting", "Data Analytics"],
+        "areaServed": { "@type": "Country", "name": "United States" },
+        "email": "HR@veltrotechllc.com"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ─── FAVICON ─── -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23E8651A'/><path d='M4 16 L11 6 L18 16 L11 26 Z' fill='white' opacity='0.95'/><path d='M14 16 L21 6 L28 16 L21 26 Z' fill='white' opacity='0.45'/></svg>" />
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --orange:       #E8651A;
+      --orange-light: #FDF0E8;
+      --orange-dark:  #C4521A;
+      --gray-900:     #1E1E1C;
+      --gray-700:     #3C3C3A;
+      --gray-500:     #6B6B68;
+      --gray-200:     #E4E3DF;
+      --gray-100:     #F5F5F2;
+      --white:        #FFFFFF;
+      --font-display: 'Sora', sans-serif;
+      --font-body:    'DM Sans', sans-serif;
+      --radius:       10px;
+      --shadow:       0 2px 16px rgba(0,0,0,0.07);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); color: var(--gray-900); background: var(--white); line-height: 1.6; }
+
+    /* ─── NAV ─── */
+    .nav {
+      position: sticky; top: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2.5rem; height: 66px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-mark {
+      width: 38px; height: 38px; border-radius: 9px;
+      background: var(--orange);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-mark svg { width: 22px; height: 22px; }
+    .logo-text { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: var(--gray-900); letter-spacing: -0.3px; }
+    .logo-text span { color: var(--orange); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 14px; color: var(--gray-500); text-decoration: none; transition: color .15s; font-weight: 500; }
+    .nav-links a:hover, .nav-links a.active { color: var(--orange); }
+    .nav-cta {
+      background: var(--orange); color: #fff; border: none;
+      padding: 9px 20px; border-radius: 7px; font-size: 13.5px;
+      cursor: pointer; font-weight: 600; font-family: var(--font-body);
+      transition: background .15s;
+    }
+    .nav-cta:hover { background: var(--orange-dark); }
+    .nav-hamburger { display: none; background: none; border: none; cursor: pointer; color: var(--gray-900); font-size: 24px; }
+    .nav-mobile { display: none; flex-direction: column; background: var(--white); border-bottom: 1px solid var(--gray-200); padding: 1rem 2rem; gap: 1rem; }
+    .nav-mobile a { font-size: 15px; color: var(--gray-700); text-decoration: none; font-weight: 500; }
+    .nav-mobile.open { display: flex; }
+
+    /* ─── PAGES ─── */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ─── HERO ─── */
+    .hero {
+      max-width: 1100px; margin: 0 auto;
+      padding: 5rem 2.5rem 4rem;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--orange-light); color: var(--orange-dark);
+      font-size: 12px; font-weight: 600; padding: 5px 13px;
+      border-radius: 20px; margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-family: var(--font-display); font-size: 40px; font-weight: 600;
+      line-height: 1.18; margin-bottom: 1.1rem; letter-spacing: -0.5px;
+    }
+    .hero h1 span { color: var(--orange); }
+    .hero p { font-size: 15.5px; color: var(--gray-500); line-height: 1.75; margin-bottom: 2rem; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--orange); color: #fff; border: none;
+      padding: 12px 24px; border-radius: 7px; font-size: 14px;
+      font-weight: 600; cursor: pointer; font-family: var(--font-body);
+      transition: background .15s; text-decoration: none; display: inline-block;
+    }
+    .btn-primary:hover { background: var(--orange-dark); }
+    .btn-outline {
+      background: transparent; color: var(--gray-700);
+      border: 1.5px solid var(--gray-200);
+      padding: 12px 24px; border-radius: 7px; font-size: 14px;
+      cursor: pointer; font-family: var(--font-body); font-weight: 500;
+      transition: border-color .15s; text-decoration: none; display: inline-block;
+    }
+    .btn-outline:hover { border-color: var(--orange); color: var(--orange); }
+
+    .hero-visual {
+      background: var(--gray-100); border-radius: 16px;
+      border: 1px solid var(--gray-200); padding: 2rem;
+    }
+    .hero-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .hero-stat {
+      background: var(--white); border-radius: 10px;
+      border: 1px solid var(--gray-200); padding: 1.1rem 1.3rem;
+    }
+    .hero-stat .num { font-family: var(--font-display); font-size: 27px; font-weight: 600; color: var(--orange); }
+    .hero-stat .lbl { font-size: 12px; color: var(--gray-500); margin-top: 3px; }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+      background: var(--gray-900); padding: 2.25rem 2.5rem;
+      display: flex; justify-content: center; gap: 5rem; flex-wrap: wrap;
+    }
+    .stat-item { text-align: center; color: #fff; }
+    .stat-item .n { font-family: var(--font-display); font-size: 16px; font-weight: 600; }
+    .stat-item .l { font-size: 12px; color: #888; margin-top: 4px; }
+
+    /* ─── SECTIONS ─── */
+    .section { padding: 4.5rem 2.5rem; max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 11.5px; color: var(--orange); font-weight: 600;
+      letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 0.6rem;
+    }
+    .section h2 {
+      font-family: var(--font-display); font-size: 30px; font-weight: 600;
+      margin-bottom: 0.8rem; letter-spacing: -0.4px;
+    }
+    .section .sub { font-size: 15px; color: var(--gray-500); max-width: 580px; line-height: 1.75; margin-bottom: 2.75rem; }
+
+    /* ─── SERVICES ─── */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .service-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: var(--radius); padding: 1.6rem;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .service-card:hover { border-color: var(--orange); box-shadow: var(--shadow); }
+    .service-icon {
+      width: 46px; height: 46px; border-radius: 10px;
+      background: var(--orange-light); display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.1rem;
+    }
+    .service-icon i { font-size: 22px; color: var(--orange); }
+    .service-card h3 { font-family: var(--font-display); font-size: 15px; font-weight: 600; margin-bottom: 0.5rem; }
+    .service-card p { font-size: 13.5px; color: var(--gray-500); line-height: 1.7; }
+
+    /* ─── CTA BAND ─── */
+    .cta-band {
+      background: var(--orange-light);
+      border-top: 1px solid #f0d5c0; border-bottom: 1px solid #f0d5c0;
+      padding: 3.5rem 2.5rem; text-align: center;
+    }
+    .cta-band h2 { font-family: var(--font-display); font-size: 26px; font-weight: 600; margin-bottom: 0.75rem; }
+    .cta-band p { font-size: 15px; color: var(--gray-500); margin-bottom: 1.5rem; }
+
+    /* ─── HOW IT WORKS ─── */
+    .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+    .steps-grid::before {
+      content: ''; position: absolute; top: 28px; left: calc(12.5% + 20px); right: calc(12.5% + 20px);
+      height: 1px; background: var(--gray-200); z-index: 0;
+    }
+    .step { text-align: center; padding: 0 1rem; position: relative; z-index: 1; }
+    .step-num {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--white); border: 2px solid var(--orange);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.1rem; font-family: var(--font-display);
+      font-size: 18px; font-weight: 600; color: var(--orange);
+    }
+    .step h4 { font-family: var(--font-display); font-size: 14.5px; font-weight: 600; margin-bottom: 0.4rem; }
+    .step p { font-size: 13px; color: var(--gray-500); line-height: 1.65; }
+
+    /* ─── INDUSTRIES ─── */
+    .industries-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .industry-card {
+      background: var(--gray-100); border-radius: var(--radius);
+      border: 1px solid var(--gray-200); padding: 1.4rem 1.2rem;
+      text-align: center; transition: border-color .2s, background .2s;
+    }
+    .industry-card:hover { border-color: var(--orange); background: var(--orange-light); }
+    .industry-card .ind-icon { font-size: 28px; margin-bottom: 0.7rem; display: block; line-height: 1; }
+    .industry-card h4 { font-family: var(--font-display); font-size: 14px; font-weight: 600; margin-bottom: 0.3rem; }
+    .industry-card p { font-size: 12.5px; color: var(--gray-500); line-height: 1.55; }
+
+    /* ─── WHY US ─── */
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .why-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: var(--radius); padding: 1.6rem;
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .why-icon {
+      width: 42px; height: 42px; border-radius: 9px; flex-shrink: 0;
+      background: var(--orange-light); display: flex; align-items: center; justify-content: center;
+    }
+    .why-icon i { font-size: 20px; color: var(--orange); }
+    .why-card h4 { font-family: var(--font-display); font-size: 14.5px; font-weight: 600; margin-bottom: 0.4rem; }
+    .why-card p { font-size: 13px; color: var(--gray-500); line-height: 1.65; }
+
+    /* ─── TECH STACK ─── */
+    .tech-section { background: var(--gray-100); padding: 4rem 2.5rem; border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); }
+    .tech-inner { max-width: 1100px; margin: 0 auto; }
+    .tech-cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 2.5rem; }
+    .tech-cat h4 { font-family: var(--font-display); font-size: 13px; font-weight: 600; color: var(--orange); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+    .tech-pills { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tech-pill {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: 20px; padding: 4px 13px; font-size: 12.5px;
+      color: var(--gray-700); font-weight: 500;
+    }
+
+    /* ─── TESTIMONIALS ─── */
+    .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .testi-card {
+      background: var(--white); border: 1px solid var(--gray-200);
+      border-radius: var(--radius); padding: 1.6rem;
+    }
+    .testi-stars { color: var(--orange); font-size: 13px; margin-bottom: 0.85rem; letter-spacing: 1px; }
+    .testi-card blockquote { font-size: 14px; color: var(--gray-700); line-height: 1.75; font-style: italic; margin-bottom: 1.1rem; }
+    .testi-author { display: flex; align-items: center; gap: 10px; }
+    .testi-avatar {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--orange-light); display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 13px; font-weight: 600; color: var(--orange-dark); flex-shrink: 0;
+    }
+    .testi-name { font-family: var(--font-display); font-size: 13.5px; font-weight: 600; }
+    .testi-role { font-size: 12px; color: var(--gray-500); }
+
+    /* ─── FEATURED JOBS ─── */
+    .featured-jobs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 2rem; }
+    .feat-job-card {
+      border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 1.3rem;
+      background: var(--white); transition: border-color .2s, box-shadow .2s; cursor: pointer;
+    }
+    .feat-job-card:hover { border-color: var(--orange); box-shadow: var(--shadow); }
+    .feat-job-title { font-family: var(--font-display); font-size: 14.5px; font-weight: 600; margin-bottom: 4px; }
+    .feat-job-meta { font-size: 12.5px; color: var(--gray-500); margin-bottom: 10px; }
+    .feat-job-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+    .feat-job-tag { background: var(--orange-light); color: var(--orange-dark); font-size: 11px; padding: 2px 9px; border-radius: 20px; font-weight: 500; }
+    .feat-job-salary { font-size: 13px; font-weight: 600; color: var(--orange); margin-top: 10px; }
+
+    /* ─── CLIENT LOGOS ─── */
+    .logos-bar {
+      padding: 2.5rem 2.5rem; border-top: 1px solid var(--gray-200);
+      text-align: center;
+    }
+    .logos-label { font-size: 12px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1.5rem; font-weight: 500; }
+    .logos-row { display: flex; justify-content: center; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
+    .logo-placeholder {
+      background: var(--gray-100); border: 1px solid var(--gray-200);
+      border-radius: 8px; padding: 10px 24px;
+      font-family: var(--font-display); font-size: 13px; font-weight: 600; color: var(--gray-500);
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 900px) {
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .steps-grid::before { display: none; }
+      .industries-grid { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .tech-cats { grid-template-columns: 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .featured-jobs-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ─── JOBS ─── */
+    .jobs-search-bar { display: flex; gap: 10px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    .jobs-search-bar input, .jobs-search-bar select {
+      padding: 10px 14px; border-radius: 7px;
+      border: 1px solid var(--gray-200); font-size: 14px;
+      background: var(--white); color: var(--gray-900); outline: none;
+      font-family: var(--font-body);
+    }
+    .jobs-search-bar input { flex: 1; min-width: 200px; }
+    .jobs-search-bar input:focus, .jobs-search-bar select:focus { border-color: var(--orange); }
+
+    .filter-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1.75rem; }
+    .ftag {
+      padding: 6px 16px; border-radius: 20px; font-size: 12.5px;
+      border: 1px solid var(--gray-200); cursor: pointer;
+      background: transparent; color: var(--gray-500);
+      transition: all .15s; font-family: var(--font-body); font-weight: 500;
+    }
+    .ftag.on { background: var(--orange); color: #fff; border-color: var(--orange); }
+
+    .jobs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .job-card {
+      border: 1px solid var(--gray-200); border-radius: var(--radius);
+      padding: 1.4rem; background: var(--white);
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .job-card:hover { border-color: var(--orange); box-shadow: var(--shadow); }
+    .job-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+    .job-title { font-family: var(--font-display); font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+    .job-company { font-size: 13px; color: var(--gray-500); }
+    .job-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 600; white-space: nowrap; }
+    .badge-full { background: #E8F5E9; color: #2E7D32; }
+    .badge-contract { background: #FFF3E0; color: #E65100; }
+    .badge-remote { background: #E3F2FD; color: #0D47A1; }
+    .job-meta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; }
+    .job-meta span { font-size: 12.5px; color: var(--gray-500); display: flex; align-items: center; gap: 4px; }
+    .job-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+    .job-tag {
+      background: var(--orange-light); color: var(--orange-dark);
+      font-size: 11.5px; padding: 2px 10px; border-radius: 20px; font-weight: 500;
+    }
+    .job-apply {
+      margin-top: 14px; width: 100%; background: var(--orange);
+      color: #fff; border: none; border-radius: 7px; padding: 9px;
+      font-size: 13.5px; cursor: pointer; font-weight: 600;
+      font-family: var(--font-body); transition: background .15s;
+      text-decoration: none; display: block; text-align: center;
+    }
+    .job-apply:hover { background: var(--orange-dark); }
+
+    /* ─── ABOUT ─── */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+    .about-panel {
+      background: var(--gray-100); border-radius: 14px;
+      border: 1px solid var(--gray-200); padding: 2rem;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .about-val { display: flex; align-items: center; gap: 12px; }
+    .about-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); flex-shrink: 0; }
+    .about-val p { font-size: 14px; font-weight: 500; }
+    .about-text p { font-size: 15px; color: var(--gray-500); line-height: 1.8; margin-bottom: 1rem; }
+
+    /* ─── CONTACT ─── */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 3.5rem; }
+    .contact-info h3 { font-family: var(--font-display); font-size: 19px; font-weight: 600; margin-bottom: 0.75rem; }
+    .contact-info p { font-size: 14.5px; color: var(--gray-500); line-height: 1.75; margin-bottom: 1.5rem; }
+    .contact-detail { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; font-size: 14px; }
+    .contact-detail i { font-size: 20px; color: var(--orange); }
+
+    .contact-form { display: flex; flex-direction: column; gap: 13px; }
+    .contact-form input, .contact-form textarea, .contact-form select {
+      padding: 11px 15px; border-radius: 7px;
+      border: 1px solid var(--gray-200); font-size: 14px;
+      font-family: var(--font-body); background: var(--white);
+      color: var(--gray-900); outline: none; resize: none; transition: border-color .15s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus { border-color: var(--orange); }
+    .contact-form textarea { min-height: 110px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+
+    .form-status {
+      padding: 10px 14px; border-radius: 7px; font-size: 13.5px; font-weight: 500; display: none;
+    }
+    .form-status.success { background: #E8F5E9; color: #2E7D32; display: block; }
+    .form-status.error { background: #FFEBEE; color: #C62828; display: block; }
+
+    /* ─── FOOTER ─── */
+    .footer {
+      background: var(--gray-900); color: #888;
+      padding: 2.25rem 2.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem; font-size: 13px;
+    }
+    .footer-brand { font-family: var(--font-display); color: #fff; font-size: 15px; font-weight: 600; }
+    .footer-brand span { color: var(--orange); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { color: #888; text-decoration: none; transition: color .15s; }
+    .footer-links a:hover { color: var(--orange); }
+
+    /* ─── NO JOBS ─── */
+    #no-jobs { display: none; color: var(--gray-500); text-align: center; padding: 2.5rem 0; font-size: 15px; }
+    #no-jobs a { color: var(--orange); text-decoration: none; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta { display: none; }
+      .nav-hamburger { display: block; }
+      .hero { grid-template-columns: 1fr; padding: 3rem 1.5rem 2.5rem; }
+      .hero h1 { font-size: 30px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .jobs-grid { grid-template-columns: 1fr; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .stats-bar { gap: 2rem; }
+      .section { padding: 3rem 1.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <a class="nav-logo" href="#" onclick="showPage('home'); return false;" aria-label="VeltroTech home">
+    <div class="logo-mark">
+      <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 11 L8 3 L14 11 L8 19 Z" fill="white" opacity="0.95"/>
+        <path d="M9 11 L15 3 L21 11 L15 19 Z" fill="white" opacity="0.45"/>
+      </svg>
+    </div>
+    <span class="logo-text">Veltro<span>Tech</span></span>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#" onclick="showPage('home'); return false;" id="nav-home" class="active">Home</a></li>
+    <li><a href="#" onclick="showPage('about'); return false;" id="nav-about">About</a></li>
+    <li><a href="#" onclick="showPage('services'); return false;" id="nav-services">Services</a></li>
+    <li><a href="#" onclick="showPage('jobs'); return false;" id="nav-jobs">Jobs</a></li>
+    <li><a href="#" onclick="showPage('contact'); return false;" id="nav-contact">Contact</a></li>
+  </ul>
+
+  <button class="nav-cta" onclick="showPage('jobs')">Browse Jobs</button>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span style="font-size:22px; line-height:1;">☰</span>
+  </button>
+</nav>
+
+<div class="nav-mobile" id="nav-mobile" role="navigation" aria-label="Mobile navigation">
+  <a href="#" onclick="showPage('home'); closeMenu(); return false;">Home</a>
+  <a href="#" onclick="showPage('about'); closeMenu(); return false;">About</a>
+  <a href="#" onclick="showPage('services'); closeMenu(); return false;">Services</a>
+  <a href="#" onclick="showPage('jobs'); closeMenu(); return false;">Jobs</a>
+  <a href="#" onclick="showPage('contact'); closeMenu(); return false;">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════ HOME ═══════════════════════════════ -->
+<main>
+<div class="page active" id="page-home">
+
+  <section class="hero" aria-label="Hero section">
+    <div>
+      <span class="hero-badge">🇺🇸 Nationwide · Remote-First</span>
+      <h1>Powering Talent.<br><span>Accelerating</span> Technology.</h1>
+      <p>VeltroTech LLC connects top-tier IT professionals with forward-thinking companies across the US. Staffing, consulting, and data analytics — all under one roof.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="showPage('jobs')">View Open Jobs</button>
+        <button class="btn-outline" onclick="showPage('contact')">Partner With Us</button>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-stat-grid">
+        <div class="hero-stat"><div class="num">500+</div><div class="lbl">Placements made</div></div>
+        <div class="hero-stat"><div class="num">98%</div><div class="lbl">Client satisfaction</div></div>
+        <div class="hero-stat"><div class="num">120+</div><div class="lbl">Partner companies</div></div>
+        <div class="hero-stat"><div class="num">50+</div><div class="lbl">Active talent profiles ready</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-bar" aria-label="Service highlights">
+    <div class="stat-item"><div class="n">IT Staffing</div><div class="l">Contract · Perm · C2H</div></div>
+    <div class="stat-item"><div class="n">Tech Consulting</div><div class="l">Strategy · Architecture</div></div>
+    <div class="stat-item"><div class="n">Data & Analytics</div><div class="l">BI · ML · Engineering</div></div>
+  </div>
+
+  <section class="section">
+    <div class="section-label">What We Do</div>
+    <h2>Three pillars, one partner</h2>
+    <p class="sub">Whether you're a business looking for elite talent or a professional seeking your next opportunity, VeltroTech delivers with speed, depth, and a personal touch.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">👥</span></div>
+        <h3>IT Staffing & Recruitment</h3>
+        <p>We source, vet, and place top IT professionals — from developers and architects to PMs and QA engineers — across contract, perm, and C2H roles nationwide. Our pre-built talent pipeline means faster placements without compromising quality.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">🔌</span></div>
+        <h3>Tech Consulting</h3>
+        <p>Strategic technology guidance for growing businesses — from cloud migration and system architecture to digital transformation roadmaps. Our consultants bring hands-on experience across enterprise, startup, and public sector environments.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">📊</span></div>
+        <h3>Data & Analytics</h3>
+        <p>From data engineering and warehouse design to BI dashboards and ML models, we help organizations turn raw data into strategic decisions. We staff and consult across the full modern data stack.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section style="background: var(--gray-100); border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); padding: 4.5rem 2.5rem;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div class="section-label">Why VeltroTech</div>
+      <h2 style="font-family: var(--font-display); font-size: 30px; font-weight: 600; margin-bottom: 0.8rem; letter-spacing: -0.4px;">What sets us apart</h2>
+      <p style="font-size: 15px; color: var(--gray-500); max-width: 580px; line-height: 1.75; margin-bottom: 2.75rem;">We're not a resume-forwarding service. We're a technology-first talent partner that understands the roles we fill — deeply.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><span style="font-size:20px;">⚡</span></div>
+          <div><h4>Fast Turnaround</h4><p>Our pre-vetted talent pool means we can surface qualified candidates quickly after your intake call — not weeks of waiting.</p></div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><span style="font-size:20px;">🛡️</span></div>
+          <div><h4>Technical Vetting</h4><p>Every candidate clears a multi-stage technical assessment. You only meet people who can actually do the job, not just talk about it.</p></div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><span style="font-size:20px;">⭐</span></div>
+          <div><h4>Quality-First Approach</h4><p>We prioritize long-term fit over quick fills. Our placement quality and retention rates reflect a process built on real standards, not volume.</p></div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><span style="font-size:20px;">🗺️</span></div>
+          <div><h4>Nationwide Reach</h4><p>Remote-first from day one. We source talent from coast to coast, giving clients access to a larger, more diverse pool than local-only firms.</p></div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><span style="font-size:20px;">🤝</span></div>
+          <div><h4>Dedicated Account Managers</h4><p>One point of contact who knows your culture, stack, and hiring bar. No handoffs, no confusion — just consistent, personalized service.</p></div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><span style="font-size:20px;">📈</span></div>
+          <div><h4>End-to-End Support</h4><p>From intake to onboarding, we stay involved. We handle contracts, compliance, and candidate care so you can focus on your business.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="section-label">Our Process</div>
+    <h2>How it works</h2>
+    <p class="sub">From your first conversation to a successful placement — here's exactly what working with VeltroTech looks like.</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Discovery Call</h4>
+        <p>We learn your requirements, culture, tech stack, and timeline. No forms — just a real conversation with a technical recruiter.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Talent Sourcing</h4>
+        <p>We tap our pre-vetted network and active pipeline to identify the best-fit candidates within 48 hours.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Screening & Vetting</h4>
+        <p>Technical assessments, background checks, and reference calls ensure you only meet candidates who are truly ready.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Placement & Support</h4>
+        <p>We handle offer logistics, onboarding coordination, and stay engaged throughout the engagement to ensure long-term success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES WE SERVE -->
+  <section style="padding: 4.5rem 2.5rem; border-top: 1px solid var(--gray-200);">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div class="section-label">Industries</div>
+      <h2 style="font-family: var(--font-display); font-size: 30px; font-weight: 600; margin-bottom: 0.8rem; letter-spacing: -0.4px;">Industries we serve</h2>
+      <p style="font-size: 15px; color: var(--gray-500); max-width: 580px; line-height: 1.75; margin-bottom: 2.75rem;">We've placed talent across a wide range of industries — each with its own compliance requirements, technical standards, and culture.</p>
+      <div class="industries-grid">
+        <div class="industry-card">
+          <div class="ind-icon">🏥</div>
+          <h4>Healthcare & Life Sciences</h4>
+          <p>HIPAA-compliant IT, EHR systems, health informatics, and clinical data roles.</p>
+        </div>
+        <div class="industry-card">
+          <div class="ind-icon">🏦</div>
+          <h4>Finance & Banking</h4>
+          <p>Fintech engineering, risk analytics, compliance systems, and trading platforms.</p>
+        </div>
+        <div class="industry-card">
+          <div class="ind-icon">💻</div>
+          <h4>Technology & SaaS</h4>
+          <p>Full-stack development, cloud infrastructure, product engineering, and DevOps.</p>
+        </div>
+        <div class="industry-card">
+          <div class="ind-icon">🛒</div>
+          <h4>Retail & E-Commerce</h4>
+          <p>Supply chain tech, data analytics, platform engineering, and digital commerce.</p>
+        </div>
+        <div class="industry-card">
+          <div class="ind-icon">🎓</div>
+          <h4>Education & EdTech</h4>
+          <p>LMS platforms, data infrastructure, software development, and IT support.</p>
+        </div>
+        <div class="industry-card">
+          <div class="ind-icon">🚚</div>
+          <h4>Logistics & Supply Chain</h4>
+          <p>ERP systems, warehouse automation, IoT integration, and data engineering.</p>
+        </div>
+        <div class="industry-card">
+          <div class="ind-icon">🏛️</div>
+          <h4>Government & Public Sector</h4>
+          <p>Cleared professionals, cybersecurity, compliance, and enterprise IT modernization.</p>
+        </div>
+        <div class="industry-card">
+          <div class="ind-icon">📡</div>
+          <h4>Telecom & Media</h4>
+          <p>Network engineering, streaming platforms, data pipelines, and software architecture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY & SKILLS -->
+  <div class="tech-section">
+    <div class="tech-inner">
+      <div class="section-label">Technology</div>
+      <h2 style="font-family: var(--font-display); font-size: 30px; font-weight: 600; margin-bottom: 0.5rem; letter-spacing: -0.4px;">Skills & technologies we staff</h2>
+      <p style="font-size: 15px; color: var(--gray-500); max-width: 600px; line-height: 1.75;">From legacy modernization to cutting-edge AI platforms — our talent network covers the full technology spectrum.</p>
+      <div class="tech-cats">
+        <div>
+          <div class="tech-cat"><h4>Languages & Frameworks</h4></div>
+          <div class="tech-pills">
+            <span class="tech-pill">Python</span><span class="tech-pill">Java</span><span class="tech-pill">JavaScript</span><span class="tech-pill">TypeScript</span><span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span class="tech-pill">Angular</span><span class="tech-pill">.NET / C#</span><span class="tech-pill">Go</span><span class="tech-pill">Scala</span><span class="tech-pill">Ruby on Rails</span><span class="tech-pill">Swift / iOS</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cat"><h4>Cloud & DevOps</h4></div>
+          <div class="tech-pills">
+            <span class="tech-pill">AWS</span><span class="tech-pill">Azure</span><span class="tech-pill">GCP</span><span class="tech-pill">Kubernetes</span><span class="tech-pill">Docker</span><span class="tech-pill">Terraform</span><span class="tech-pill">Jenkins</span><span class="tech-pill">GitLab CI</span><span class="tech-pill">Linux</span><span class="tech-pill">Ansible</span><span class="tech-pill">Prometheus</span><span class="tech-pill">DataDog</span>
+          </div>
+        </div>
+        <div>
+          <div class="tech-cat"><h4>Data & AI</h4></div>
+          <div class="tech-pills">
+            <span class="tech-pill">Snowflake</span><span class="tech-pill">Spark</span><span class="tech-pill">dbt</span><span class="tech-pill">Airflow</span><span class="tech-pill">Power BI</span><span class="tech-pill">Tableau</span><span class="tech-pill">TensorFlow</span><span class="tech-pill">PyTorch</span><span class="tech-pill">SQL / NoSQL</span><span class="tech-pill">Kafka</span><span class="tech-pill">Databricks</span><span class="tech-pill">LLM / GenAI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED JOBS -->
+  <section class="section">
+    <div class="section-label">Open Positions</div>
+    <h2>Featured jobs</h2>
+    <p class="sub">A snapshot of our latest openings. Browse all roles on the Jobs page.</p>
+    <div class="featured-jobs-grid">
+      <div class="feat-job-card" onclick="showPage('jobs')">
+        <div class="feat-job-title">Senior Full Stack Developer</div>
+        <div class="feat-job-meta">Remote, USA · Full-time</div>
+        <div class="feat-job-tags"><span class="feat-job-tag">React</span><span class="feat-job-tag">Node.js</span><span class="feat-job-tag">AWS</span></div>
+        <div class="feat-job-salary">$130k – $160k</div>
+      </div>
+      <div class="feat-job-card" onclick="showPage('jobs')">
+        <div class="feat-job-title">Data Engineer</div>
+        <div class="feat-job-meta">Remote, USA · Contract</div>
+        <div class="feat-job-tags"><span class="feat-job-tag">Python</span><span class="feat-job-tag">Spark</span><span class="feat-job-tag">Snowflake</span></div>
+        <div class="feat-job-salary">$80 – $95/hr</div>
+      </div>
+      <div class="feat-job-card" onclick="showPage('jobs')">
+        <div class="feat-job-title">Cloud Solutions Architect</div>
+        <div class="feat-job-meta">Remote, USA · Full-time</div>
+        <div class="feat-job-tags"><span class="feat-job-tag">AWS</span><span class="feat-job-tag">Terraform</span><span class="feat-job-tag">Kubernetes</span></div>
+        <div class="feat-job-salary">$150k – $185k</div>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <button class="btn-primary" onclick="showPage('jobs')">View All Open Positions →</button>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY / CLIENT LOGOS -->
+  <div class="logos-bar">
+    <div class="logos-label">Future partner logos will appear here</div>
+    <div class="logos-row">
+      <div class="logo-placeholder">Acme Technologies</div>
+      <div class="logo-placeholder">BrightPath Solutions</div>
+      <div class="logo-placeholder">NovaStar Systems</div>
+      <div class="logo-placeholder">Apex Digital Group</div>
+      <div class="logo-placeholder">Meridian Health IT</div>
+      <div class="logo-placeholder">CoreLink Ventures</div>
+    </div>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div class="cta-band">
+    <h2>Ready to find your next great hire?</h2>
+    <p>Tell us what you need — we'll handle the rest. A dedicated account manager will reach out within one business day.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <button class="btn-primary" onclick="showPage('contact')">Get Started Today</button>
+      <button class="btn-outline" onclick="showPage('jobs')">Browse Open Jobs</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<div class="page" id="page-about">
+  <section class="section">
+    <div class="section-label">Our Story</div>
+    <h2>Built by tech people, for tech people</h2>
+    <p class="sub">VeltroTech LLC was founded to bridge the gap between exceptional IT talent and the companies that need them most — nationwide, remote-first.</p>
+    <div class="about-grid">
+      <div class="about-panel" aria-label="Our values">
+        <div class="about-val"><div class="about-dot"></div><p>Integrity in every placement</p></div>
+        <div class="about-val"><div class="about-dot"></div><p>Speed without sacrificing quality</p></div>
+        <div class="about-val"><div class="about-dot"></div><p>Long-term relationships over transactions</p></div>
+        <div class="about-val"><div class="about-dot"></div><p>Deep technical vetting process</p></div>
+        <div class="about-val"><div class="about-dot"></div><p>Diversity & inclusion commitment</p></div>
+        <div class="about-val"><div class="about-dot"></div><p>Nationwide reach, personal touch</p></div>
+      </div>
+      <div class="about-text">
+        <p>We are a nationwide IT staffing, consulting, and analytics firm committed to connecting the right talent with the right opportunity — fast.</p>
+        <p>Our team brings deep domain expertise across software engineering, cloud infrastructure, data science, cybersecurity, and enterprise IT. We understand the nuances of the roles we fill because we've lived them.</p>
+        <p>From startups to Fortune 500s, we've partnered with companies at every stage of growth. Whether you need a single contractor or a full project team, VeltroTech delivers with speed, precision, and care.</p>
+        <button class="btn-primary" onclick="showPage('contact')" style="margin-top: 0.5rem;">Work With Us</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════ SERVICES ═══════════════════════════════ -->
+<div class="page" id="page-services">
+  <section class="section">
+    <div class="section-label">Services</div>
+    <h2>Everything your tech org needs</h2>
+    <p class="sub">From a single hire to a full transformation program, VeltroTech's services are designed to scale with your ambition.</p>
+    <div class="services-grid" style="margin-bottom: 2.5rem;">
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">👥</span></div>
+        <h3>Contract Staffing</h3>
+        <p>Flexible, vetted IT professionals available immediately. Perfect for project surges, maternity cover, or specialized skills gaps.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">💼</span></div>
+        <h3>Permanent Placement</h3>
+        <p>Full-cycle recruitment for permanent roles. We handle sourcing, screening, interviews, and offer management end-to-end.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">🔄</span></div>
+        <h3>Contract-to-Hire</h3>
+        <p>Try before you commit. Evaluate talent on the job before making a permanent offer — reduce hiring risk significantly.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">☁️</span></div>
+        <h3>Cloud & Infrastructure</h3>
+        <p>AWS, Azure, GCP migration and managed services consulting. Architecture reviews, cost optimization, and DevOps transformation.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">🗄️</span></div>
+        <h3>Data Engineering & BI</h3>
+        <p>Build robust data pipelines, warehouses, and visualization layers. Turn raw data into decisions your team can act on.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><span style="font-size:22px;">🔒</span></div>
+        <h3>Cybersecurity Staffing</h3>
+        <p>SOC analysts, pen testers, CISO advisory, compliance (SOC2, HIPAA, PCI). Security talent placed fast when you need it most.</p>
+      </div>
+    </div>
+    <div style="text-align: center;">
+      <button class="btn-primary" onclick="showPage('contact')">Request a Service →</button>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════ JOBS ═══════════════════════════════ -->
+<div class="page" id="page-jobs">
+  <section class="section">
+    <div class="section-label">Open Positions</div>
+    <h2>Find your next role</h2>
+    <p class="sub">Browse opportunities across IT staffing, consulting, and data & analytics — nationwide and remote. Send your resume to <a href="mailto:HR@veltrotechllc.com" style="color: var(--orange);">HR@veltrotechllc.com</a> to apply.</p>
+
+    <div class="jobs-search-bar">
+      <input type="text" id="job-search" placeholder="🔍  Search by title, skill, or keyword…" oninput="filterJobs()" aria-label="Search jobs">
+      <select id="job-type" onchange="filterJobs()" aria-label="Filter by type">
+        <option value="">All Types</option>
+        <option value="Full-time">Full-time</option>
+        <option value="Contract">Contract</option>
+        <option value="Remote">Remote</option>
+      </select>
+      <select id="job-cat" onchange="filterJobs()" aria-label="Filter by category">
+        <option value="">All Categories</option>
+        <option value="Engineering">Engineering</option>
+        <option value="Data">Data & Analytics</option>
+        <option value="Cloud">Cloud & DevOps</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+      </select>
+    </div>
+
+    <div class="filter-tags" role="group" aria-label="Quick filters">
+      <button class="ftag on" onclick="toggleTag(this,'')">All</button>
+      <button class="ftag" onclick="toggleTag(this,'Engineering')">Engineering</button>
+      <button class="ftag" onclick="toggleTag(this,'Data')">Data & Analytics</button>
+      <button class="ftag" onclick="toggleTag(this,'Cloud')">Cloud & DevOps</button>
+      <button class="ftag" onclick="toggleTag(this,'Cybersecurity')">Cybersecurity</button>
+    </div>
+
+    <div class="jobs-grid" id="jobs-grid" role="list" aria-label="Job listings"></div>
+    <p id="no-jobs">No jobs match your search. <a href="#" onclick="resetJobs(); return false;">Clear filters</a></p>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+<div class="page" id="page-contact">
+  <section class="section">
+    <div class="section-label">Get In Touch</div>
+    <h2>Let's work together</h2>
+    <p class="sub">Whether you're hiring, job searching, or need a consulting partner — we'd love to hear from you.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>VeltroTech LLC</h3>
+        <p>We're a remote-first company with talent and clients across the United States. Reach out and a member of our team will respond within one business day.</p>
+        <div class="contact-detail"><span style="font-size:20px;color:var(--orange);">📍</span><span>Nationwide · Remote-First, USA</span></div>
+        <div class="contact-detail"><span style="font-size:20px;color:var(--orange);">✉️</span><a href="mailto:HR@veltrotechllc.com" style="color:inherit; text-decoration:none;">HR@veltrotechllc.com</a></div>
+        <div class="contact-detail"><span style="font-size:20px;color:var(--orange);">🕐</span><span>Mon–Fri, 8am–6pm CT</span></div>
+      </div>
+      <div>
+        <div class="contact-form" id="contact-form" role="form" aria-label="Contact form">
+          <div class="form-row">
+            <input type="text" id="cf-name" placeholder="Full name" required aria-label="Full name">
+            <input type="email" id="cf-email" placeholder="Email address" required aria-label="Email address">
+          </div>
+          <input type="text" id="cf-company" placeholder="Company name (optional)" aria-label="Company name">
+          <select id="cf-subject" aria-label="Inquiry type">
+            <option value="Hiring Inquiry">I'm looking to hire talent</option>
+            <option value="Job Seeker">I'm a candidate looking for a role</option>
+            <option value="Consulting Services">I need consulting services</option>
+            <option value="General Inquiry">General inquiry</option>
+          </select>
+          <textarea id="cf-message" placeholder="Tell us about your needs…" required aria-label="Message"></textarea>
+          <div class="form-status" id="form-status" role="alert"></div>
+          <button class="btn-primary" style="width:100%; padding:13px;" onclick="submitForm()">Send Message →</button>
+          <p style="font-size:12px; color: var(--gray-500); text-align:center;">
+            Or email us directly at <a href="mailto:HR@veltrotechllc.com" style="color:var(--orange);">HR@veltrotechllc.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</main>
+
+<!-- ─── FOOTER ─── -->
+<footer class="footer">
+  <div>
+    <div class="footer-brand">Veltro<span>Tech</span> LLC</div>
+    <div style="margin-top:5px; font-size:12px;">Powering Talent. Accelerating Technology.</div>
+  </div>
+  <div class="footer-links">
+    <a href="#" onclick="showPage('home'); return false;">Home</a>
+    <a href="#" onclick="showPage('about'); return false;">About</a>
+    <a href="#" onclick="showPage('services'); return false;">Services</a>
+    <a href="#" onclick="showPage('jobs'); return false;">Jobs</a>
+    <a href="#" onclick="showPage('contact'); return false;">Contact</a>
+  </div>
+  <div>© 2025 VeltroTech LLC · All rights reserved</div>
+</footer>
+
+<script>
+  /* ─── EmailJS init ───
+     SETUP STEPS:
+     1. Go to https://www.emailjs.com and create a free account
+     2. Add an Email Service (Gmail / Outlook / SMTP) and copy the Service ID
+     3. Create an Email Template with variables: {{from_name}}, {{from_email}},
+        {{company}}, {{subject}}, {{message}} — set "To email" to HR@veltrotechllc.com
+     4. Copy your Public Key from Account > API Keys
+     5. Replace the three placeholders below with your actual values
+  */
+  emailjs.init("YOUR_EMAILJS_PUBLIC_KEY"); // ← replace
+
+  const EMAILJS_SERVICE_ID  = "YOUR_SERVICE_ID";   // ← replace
+  const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";  // ← replace
+
+  /* ─── Jobs Data ─── */
+  const jobs = [
+    { title: "Senior Full Stack Developer",  company: "VeltroTech Client", type: "Full-time", cat: "Engineering",    location: "Remote, USA", salary: "$130k–$160k",  tags: ["React","Node.js","AWS"] },
+    { title: "Data Engineer",                company: "VeltroTech Client", type: "Contract",  cat: "Data",           location: "Remote, USA", salary: "$80–$95/hr",   tags: ["Python","Spark","Snowflake"] },
+    { title: "Cloud Solutions Architect",    company: "VeltroTech Client", type: "Full-time", cat: "Cloud",          location: "Remote, USA", salary: "$150k–$185k",  tags: ["AWS","Terraform","Kubernetes"] },
+    { title: "Cybersecurity Analyst",        company: "VeltroTech Client", type: "Contract",  cat: "Cybersecurity",  location: "Remote, USA", salary: "$70–$90/hr",   tags: ["SIEM","SOC","NIST"] },
+    { title: "BI Developer / Power BI",      company: "VeltroTech Client", type: "Remote",    cat: "Data",           location: "Remote, USA", salary: "$95k–$120k",   tags: ["Power BI","SQL","DAX"] },
+    { title: "DevOps Engineer",              company: "VeltroTech Client", type: "Full-time", cat: "Cloud",          location: "Remote, USA", salary: "$125k–$150k",  tags: ["CI/CD","Docker","Azure"] },
+    { title: "Machine Learning Engineer",    company: "VeltroTech Client", type: "Contract",  cat: "Data",           location: "Remote, USA", salary: "$100–$120/hr", tags: ["Python","TensorFlow","MLOps"] },
+    { title: "IT Project Manager",           company: "VeltroTech Client", type: "Full-time", cat: "Engineering",    location: "Remote, USA", salary: "$105k–$130k",  tags: ["PMP","Agile","JIRA"] },
+  ];
+
+  let activeTag = '';
+
+  function badgeClass(t) {
+    return t === 'Full-time' ? 'badge-full' : t === 'Contract' ? 'badge-contract' : 'badge-remote';
+  }
+
+  function renderJobs(list) {
+    const grid = document.getElementById('jobs-grid');
+    const none = document.getElementById('no-jobs');
+    if (!list.length) { grid.innerHTML = ''; none.style.display = 'block'; return; }
+    none.style.display = 'none';
+    grid.innerHTML = list.map(j => {
+      const subj = encodeURIComponent('Application for: ' + j.title);
+      const body = encodeURIComponent(
+        'Hi VeltroTech Team,\n\nI would like to apply for the ' + j.title +
+        ' position.\n\nPlease find my resume attached.\n\nBest regards,'
+      );
+      const mailto = 'mailto:HR@veltrotechllc.com?subject=' + subj + '&body=' + body;
+      return `
+        <article class="job-card" role="listitem">
+          <div class="job-top">
+            <div>
+              <div class="job-title">${j.title}</div>
+              <div class="job-company">${j.company}</div>
+            </div>
+            <span class="job-badge ${badgeClass(j.type)}">${j.type}</span>
+          </div>
+          <div class="job-meta">
+            <span>📍 ${j.location}</span>
+            <span>💰 ${j.salary}</span>
+          </div>
+          <div class="job-tags">
+            ${j.tags.map(t => `<span class="job-tag">${t}</span>`).join('')}
+          </div>
+          <a class="job-apply" href="${mailto}">Apply Now — Email Resume →</a>
+        </article>`;
+    }).join('');
+  }
+
+  function filterJobs() {
+    const q    = document.getElementById('job-search').value.toLowerCase();
+    const type = document.getElementById('job-type').value;
+    const cat  = document.getElementById('job-cat').value;
+    const filtered = jobs.filter(j => {
+      const mQ   = !q    || j.title.toLowerCase().includes(q) || j.tags.some(t => t.toLowerCase().includes(q));
+      const mT   = !type || j.type === type;
+      const mC   = (!cat && !activeTag) || j.cat === (cat || activeTag);
+      return mQ && mT && mC;
+    });
+    renderJobs(filtered);
+  }
+
+  function toggleTag(el, tag) {
+    document.querySelectorAll('.ftag').forEach(t => t.classList.remove('on'));
+    el.classList.add('on');
+    activeTag = tag;
+    document.getElementById('job-cat').value = '';
+    filterJobs();
+  }
+
+  function resetJobs() {
+    document.getElementById('job-search').value = '';
+    document.getElementById('job-type').value   = '';
+    document.getElementById('job-cat').value    = '';
+    activeTag = '';
+    document.querySelectorAll('.ftag').forEach((t,i) => t.classList.toggle('on', i === 0));
+    renderJobs(jobs);
+  }
+
+  /* ─── Contact Form ─── */
+  function submitForm() {
+    const name    = document.getElementById('cf-name').value.trim();
+    const email   = document.getElementById('cf-email').value.trim();
+    const company = document.getElementById('cf-company').value.trim();
+    const subject = document.getElementById('cf-subject').value;
+    const message = document.getElementById('cf-message').value.trim();
+    const status  = document.getElementById('form-status');
+
+    if (!name || !email || !message) {
+      status.className = 'form-status error';
+      status.textContent = 'Please fill in your name, email, and message.';
+      return;
+    }
+
+    const btn = document.querySelector('#contact-form .btn-primary');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    status.className = 'form-status';
+    status.textContent = '';
+
+    emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+      from_name:  name,
+      from_email: email,
+      company:    company || 'N/A',
+      subject:    subject,
+      message:    message,
+      to_email:   'HR@veltrotechllc.com'
+    }).then(() => {
+      status.className = 'form-status success';
+      status.textContent = '✓ Message sent! We\'ll get back to you within one business day.';
+      btn.textContent = 'Message Sent ✓';
+      document.getElementById('cf-name').value    = '';
+      document.getElementById('cf-email').value   = '';
+      document.getElementById('cf-company').value = '';
+      document.getElementById('cf-message').value = '';
+    }).catch(err => {
+      status.className = 'form-status error';
+      status.textContent = 'Something went wrong. Please email us directly at HR@veltrotechllc.com';
+      btn.textContent = 'Send Message →';
+      btn.disabled = false;
+      console.error('EmailJS error:', err);
+    });
+  }
+
+  /* ─── Navigation ─── */
+  const pageTitles = {
+    home:     'VeltroTech LLC | IT Staffing, Consulting & Analytics',
+    about:    'About Us | VeltroTech LLC',
+    services: 'Our Services | VeltroTech LLC',
+    jobs:     'Open IT Jobs | VeltroTech LLC',
+    contact:  'Contact Us | VeltroTech LLC'
+  };
+  const pageURLs = {
+    home:     '/',
+    about:    '/about',
+    services: '/services',
+    jobs:     '/jobs',
+    contact:  '/contact'
+  };
+
+  function showPage(name) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + name).classList.add('active');
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    const el = document.getElementById('nav-' + name);
+    if (el) el.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.title = pageTitles[name] || pageTitles.home;
+    if (window.history && window.history.pushState) {
+      window.history.pushState({ page: name }, pageTitles[name], pageURLs[name]);
+    }
+  }
+
+  window.addEventListener('popstate', function(e) {
+    if (e.state && e.state.page) showPage(e.state.page);
+  });
+
+  (function() {
+    const path = window.location.pathname.replace(/\/$/, '') || '/';
+    const map = { '/about':'about', '/services':'services', '/jobs':'jobs', '/contact':'contact' };
+    const page = map[path] || 'home';
+    showPage(page);
+  })();
+
+  function toggleMenu() {
+    document.getElementById('nav-mobile').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('nav-mobile').classList.remove('open');
+  }
+
+  /* Init */
+  renderJobs(jobs);
+</script>
+
+</body>
+</html>
