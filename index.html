@@ -97,7 +97,15 @@
 
     html { scroll-behavior: smooth; }
     body { font-family: var(--font-body); color: var(--gray-900); background: var(--white); line-height: 1.6; }
-
+  
+    .footer-note {
+  flex-basis: 100%;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #888;
+}
     /* ─── NAV ─── */
     .nav {
       position: sticky; top: 0; z-index: 200;
@@ -906,6 +914,9 @@
     <a href="#" onclick="showPage('contact'); return false;">Contact</a>
   </div>
   <div>© 2026 VeltroTech LLC · All rights reserved</div>
+    <div class="footer-note">
+    Job postings, closing dates, and candidate selection are managed by VeltroTech LLC in accordance with our resume screening and selection process, hiring manager review, and client interview requirements. Posting a role does not guarantee an interview or placement.
+  </div>
 </footer>
 
 <script>
