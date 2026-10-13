@@ -369,7 +369,7 @@
     .job-card:hover { border-color: var(--orange); box-shadow: var(--shadow); }
     .job-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
     .job-title { font-family: var(--font-display); font-size: 15px; font-weight: 600; margin-bottom: 3px; }
-    .job-company { font-size: 13px; color: var(--gray-500); }
+    .job-company { font-size: 13px; color: var(--gray-500); white-space: pre-line; }
     .job-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 600; white-space: nowrap; }
     .badge-full { background: #E8F5E9; color: #2E7D32; }
     .badge-contract { background: #FFF3E0; color: #E65100; }
@@ -924,22 +924,43 @@
   const EMAILJS_TEMPLATE_ID = "template_23fe3ef";  // ← replace
 
   /* ─── Jobs Data ─── */
-  const jobs = [
-    { title: "AWS Python Lead",  company: "Lead design and development of scalable Python applications and services on AWS (Lambda, ECS/Fargate, API Gateway, S3, DynamoDB)
+const jobs = [
+    {
+      title: "AWS Python Lead",
+      company: `Lead design and development of scalable Python applications and services on AWS (Lambda, ECS/Fargate, API Gateway, S3, DynamoDB)
 Guide and mentor a team of engineers; conduct code reviews and enforce best practices
 Architect serverless and event-driven solutions with a focus on security, cost, and performance
 Build and maintain CI/CD pipelines using CodePipeline, GitHub Actions, or Jenkins, with Infrastructure as Code (Terraform/CloudFormation)
-Partner with stakeholders to translate business requirements into technical solutions and deliver on agreed timelines", type: "Contract", cat: "Engineering",    location: "Remote, USA", tags: ["React","Node.js","AWS"] },
-    { title: "Agentic AI Developer",                company: "Design and build agentic AI applications and multi-agent workflows using LangChain and LangGraph
+Partner with stakeholders to translate business requirements into technical solutions and deliver on agreed timelines`,
+      type: "Contract",
+      cat: "Engineering",
+      location: "Remote, USA",
+      tags: ["Python", "AWS", "Lambda"]
+    },
+    {
+      title: "Agentic AI Developer",
+      company: `Design and build agentic AI applications and multi-agent workflows using LangChain and LangGraph
 Develop RAG pipelines with vector databases, embeddings, and LLM integrations (OpenAI, Anthropic, Bedrock)
 Implement tool-calling, memory, and orchestration logic to automate complex business processes
 Evaluate, test, and monitor LLM outputs for accuracy, latency, safety, and cost
-Deploy and scale AI solutions on cloud platforms (AWS preferred) with production-grade APIs and observability", type: "Contract",  cat: "Data",           location: "Remote, USA",   tags: ["Python","Spark","Snowflake"] },
-    { title: "Data Engineer",    company: "Design, build, and optimize ETL/ELT pipelines using AWS Glue, PySpark, and Python
+Deploy and scale AI solutions on cloud platforms (AWS preferred) with production-grade APIs and observability`,
+      type: "Contract",
+      cat: "Data",
+      location: "Remote, USA",
+      tags: ["LangChain", "LangGraph", "Bedrock"]
+    },
+    {
+      title: "Data Engineer",
+      company: `Design, build, and optimize ETL/ELT pipelines using AWS Glue, PySpark, and Python
 Ingest and transform large-scale structured and semi-structured data from multiple sources into S3, Redshift, or Athena
 Implement data quality checks, partitioning, and performance tuning for Spark jobs
 Orchestrate workflows using Step Functions, Airflow, or Glue Workflows, with monitoring and alerting
-Collaborate with analysts, data scientists, and business teams to deliver reliable, well-documented datasets", type: "Contract", cat: "Cloud",          location: "Remote, USA",  tags: ["AWS","Terraform","Kubernetes"] },
+Collaborate with analysts, data scientists, and business teams to deliver reliable, well-documented datasets`,
+      type: "Contract",
+      cat: "Cloud",
+      location: "Remote, USA",
+      tags: ["AWS Glue", "PySpark", "Python"]
+    },
   ];
 
   let activeTag = '';
@@ -948,7 +969,7 @@ Collaborate with analysts, data scientists, and business teams to deliver reliab
     return t === 'Full-time' ? 'badge-full' : t === 'Contract' ? 'badge-contract' : 'badge-remote';
   }
 
-  function renderJobs(list) {
+ function renderJobs(list) {
     const grid = document.getElementById('jobs-grid');
     const none = document.getElementById('no-jobs');
     if (!list.length) { grid.innerHTML = ''; none.style.display = 'block'; return; }
@@ -971,7 +992,6 @@ Collaborate with analysts, data scientists, and business teams to deliver reliab
           </div>
           <div class="job-meta">
             <span>📍 ${j.location}</span>
-            <span>💰 ${j.salary}</span>
           </div>
           <div class="job-tags">
             ${j.tags.map(t => `<span class="job-tag">${t}</span>`).join('')}
@@ -980,7 +1000,7 @@ Collaborate with analysts, data scientists, and business teams to deliver reliab
         </article>`;
     }).join('');
   }
-
+  
   function filterJobs() {
     const q    = document.getElementById('job-search').value.toLowerCase();
     const type = document.getElementById('job-type').value;
