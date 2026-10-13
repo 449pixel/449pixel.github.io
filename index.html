@@ -699,21 +699,21 @@
     <div class="featured-jobs-grid">
       <div class="feat-job-card" onclick="showPage('jobs')">
         <div class="feat-job-title">Senior Full Stack Developer</div>
-        <div class="feat-job-meta">Remote, USA · Full-time</div>
-        <div class="feat-job-tags"><span class="feat-job-tag">React</span><span class="feat-job-tag">Node.js</span><span class="feat-job-tag">AWS</span></div>
-        <div class="feat-job-salary">$130k – $160k</div>
+        <div class="feat-job-meta">Pennsylvania, USA · Contract</div>
+        <div class="feat-job-tags"><span class="feat-job-tag">Python</span><span class="feat-job-tag">Node.js</span><span class="feat-job-tag">AWS</span></div>
+       <!-- <div class="feat-job-salary">$130k – $160k</div>  -->
       </div>
       <div class="feat-job-card" onclick="showPage('jobs')">
         <div class="feat-job-title">Data Engineer</div>
-        <div class="feat-job-meta">Remote, USA · Contract</div>
-        <div class="feat-job-tags"><span class="feat-job-tag">Python</span><span class="feat-job-tag">Spark</span><span class="feat-job-tag">Snowflake</span></div>
-        <div class="feat-job-salary">$80 – $95/hr</div>
+        <div class="feat-job-meta">Pennsylvania, USA · Contract</div>
+        <div class="feat-job-tags"><span class="feat-job-tag">Python</span><span class="feat-job-tag">Spark</span><span class="feat-job-tag">Glue</span></div>
+        <!-- <div class="feat-job-salary">$80 – $95/hr</div>  -->
       </div>
       <div class="feat-job-card" onclick="showPage('jobs')">
-        <div class="feat-job-title">Cloud Solutions Architect</div>
+        <div class="feat-job-title">Agentic AI Developer</div>
         <div class="feat-job-meta">Remote, USA · Full-time</div>
-        <div class="feat-job-tags"><span class="feat-job-tag">AWS</span><span class="feat-job-tag">Terraform</span><span class="feat-job-tag">Kubernetes</span></div>
-        <div class="feat-job-salary">$150k – $185k</div>
+        <div class="feat-job-tags"><span class="feat-job-tag">LangChain</span><span class="feat-job-tag">LangGraph</span><span class="feat-job-tag">Bedrock</span></div>
+       <!-- <div class="feat-job-salary">$150k – $185k</div> -->
       </div>
     </div>
     <div style="text-align: center;">
@@ -721,7 +721,7 @@
     </div>
   </section>
 
-  <!-- TRUSTED BY / CLIENT LOGOS -->
+  <!-- TRUSTED BY / CLIENT LOGOS
   <div class="logos-bar">
     <div class="logos-label">Future partner logos will appear here</div>
     <div class="logos-row">
@@ -732,7 +732,7 @@
       <div class="logo-placeholder">Meridian Health IT</div>
       <div class="logo-placeholder">CoreLink Ventures</div>
     </div>
-  </div>
+  </div>  -->
 
   <!-- FINAL CTA -->
   <div class="cta-band">
@@ -905,7 +905,7 @@
     <a href="#" onclick="showPage('jobs'); return false;">Jobs</a>
     <a href="#" onclick="showPage('contact'); return false;">Contact</a>
   </div>
-  <div>© 2025 VeltroTech LLC · All rights reserved</div>
+  <div>© 2026 VeltroTech LLC · All rights reserved</div>
 </footer>
 
 <script>
@@ -925,14 +925,21 @@
 
   /* ─── Jobs Data ─── */
   const jobs = [
-    { title: "Senior Full Stack Developer",  company: "VeltroTech Client", type: "Full-time", cat: "Engineering",    location: "Remote, USA", salary: "$130k–$160k",  tags: ["React","Node.js","AWS"] },
-    { title: "Data Engineer",                company: "VeltroTech Client", type: "Contract",  cat: "Data",           location: "Remote, USA", salary: "$80–$95/hr",   tags: ["Python","Spark","Snowflake"] },
-    { title: "Cloud Solutions Architect",    company: "VeltroTech Client", type: "Full-time", cat: "Cloud",          location: "Remote, USA", salary: "$150k–$185k",  tags: ["AWS","Terraform","Kubernetes"] },
-    { title: "Cybersecurity Analyst",        company: "VeltroTech Client", type: "Contract",  cat: "Cybersecurity",  location: "Remote, USA", salary: "$70–$90/hr",   tags: ["SIEM","SOC","NIST"] },
-    { title: "BI Developer / Power BI",      company: "VeltroTech Client", type: "Remote",    cat: "Data",           location: "Remote, USA", salary: "$95k–$120k",   tags: ["Power BI","SQL","DAX"] },
-    { title: "DevOps Engineer",              company: "VeltroTech Client", type: "Full-time", cat: "Cloud",          location: "Remote, USA", salary: "$125k–$150k",  tags: ["CI/CD","Docker","Azure"] },
-    { title: "Machine Learning Engineer",    company: "VeltroTech Client", type: "Contract",  cat: "Data",           location: "Remote, USA", salary: "$100–$120/hr", tags: ["Python","TensorFlow","MLOps"] },
-    { title: "IT Project Manager",           company: "VeltroTech Client", type: "Full-time", cat: "Engineering",    location: "Remote, USA", salary: "$105k–$130k",  tags: ["PMP","Agile","JIRA"] },
+    { title: "AWS Python Lead",  company: "Lead design and development of scalable Python applications and services on AWS (Lambda, ECS/Fargate, API Gateway, S3, DynamoDB)
+Guide and mentor a team of engineers; conduct code reviews and enforce best practices
+Architect serverless and event-driven solutions with a focus on security, cost, and performance
+Build and maintain CI/CD pipelines using CodePipeline, GitHub Actions, or Jenkins, with Infrastructure as Code (Terraform/CloudFormation)
+Partner with stakeholders to translate business requirements into technical solutions and deliver on agreed timelines", type: "Contract", cat: "Engineering",    location: "Remote, USA", tags: ["React","Node.js","AWS"] },
+    { title: "Agentic AI Developer",                company: "Design and build agentic AI applications and multi-agent workflows using LangChain and LangGraph
+Develop RAG pipelines with vector databases, embeddings, and LLM integrations (OpenAI, Anthropic, Bedrock)
+Implement tool-calling, memory, and orchestration logic to automate complex business processes
+Evaluate, test, and monitor LLM outputs for accuracy, latency, safety, and cost
+Deploy and scale AI solutions on cloud platforms (AWS preferred) with production-grade APIs and observability", type: "Contract",  cat: "Data",           location: "Remote, USA",   tags: ["Python","Spark","Snowflake"] },
+    { title: "Data Engineer",    company: "Design, build, and optimize ETL/ELT pipelines using AWS Glue, PySpark, and Python
+Ingest and transform large-scale structured and semi-structured data from multiple sources into S3, Redshift, or Athena
+Implement data quality checks, partitioning, and performance tuning for Spark jobs
+Orchestrate workflows using Step Functions, Airflow, or Glue Workflows, with monitoring and alerting
+Collaborate with analysts, data scientists, and business teams to deliver reliable, well-documented datasets", type: "Contract", cat: "Cloud",          location: "Remote, USA",  tags: ["AWS","Terraform","Kubernetes"] },
   ];
 
   let activeTag = '';
